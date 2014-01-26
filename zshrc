@@ -1,3 +1,6 @@
+#bunny's zsh config file.
+#2014-1-26
+
 #color{{{
 autoload colors
 colors
