@@ -15,14 +15,14 @@ FINISH="%{$terminfo[sgr0]%}"
  
 #命令提示符
 RPROMPT=$(echo "$_WHITE%d$FINISH")
-PROMPT=$(echo "$CYAN%n$WHITE@$YELLOW%M:$_MAGENTA%1~$_YELLOW%#$FINISH ")
+PROMPT=$(echo "$CYAN%n$WHITE@$YELLOW%m:$_MAGENTA%1~$_YELLOW%#$FINISH ")
  
 #PROMPT=$(echo "$BLUE%M$GREEN%/
 #$CYAN%n@$BLUE%M:$GREEN%/$_YELLOW>>>$FINISH ")
 #标题栏、任务栏样式{{{
 case $TERM in (*xterm*|*rxvt*|(dt|k|E)term)
-precmd () { print -Pn "\e]0;%n@%M//%/\a" }
-preexec () { print -Pn "\e]0;%n@%M//%/\ $1\a" }
+precmd () { print -Pn "\e]0;%n@%m:%1~\a" }
+preexec () { print -Pn "\e]0;%n@%m:%1~\ $1\a" }
 ;;
 esac
 #}}}
@@ -30,9 +30,9 @@ esac
 #编辑器
 export EDITOR=vim
 #输入法
-export XMODIFIERS="@im=ibus"
-export QT_MODULE=ibus
-export GTK_MODULE=ibus
+export XMODIFIERS="@im=fcitx"
+export QT_MODULE=fcitx
+export GTK_MODULE=fcitx
 #关于历史纪录的配置 {{{
 #历史纪录条目数量
 export HISTSIZE=10000
