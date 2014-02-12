@@ -1,5 +1,5 @@
 #bunny's zsh config file.
-#2014-1-26
+#2014-2-12
 
 #color{{{
 autoload colors
@@ -31,8 +31,8 @@ esac
 export EDITOR=vim
 #输入法
 export XMODIFIERS="@im=fcitx"
-export QT_MODULE=fcitx
-export GTK_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
 #关于历史纪录的配置 {{{
 #历史纪录条目数量
 export HISTSIZE=10000
