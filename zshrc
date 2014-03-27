@@ -232,10 +232,10 @@ bindkey "\e\e" sudo-command-line
 #命令别名 {{{
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
+#alias rm='rm -i'
 alias ls='ls -F --color=auto'
 alias ll='ls -al'
-alias grep='grep --color=auto'
+#alias grep='grep --color=auto'
 alias la='ls -a'
 alias pacman='sudo pacman-color'
 alias p='sudo pacman-color'
