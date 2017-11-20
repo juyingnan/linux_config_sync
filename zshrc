@@ -250,6 +250,7 @@ autoload run-help
 #历史命令 top10
 alias top10='print -l  ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
 #}}}
+alias updatetuzi='sudo apt-get update && sudo apt-get upgrade'
  
 #路径别名 {{{
 #进入相应的路径时只要 cd ~xxx
