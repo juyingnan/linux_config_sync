@@ -241,7 +241,7 @@ alias pacman='sudo pacman-color'
 alias p='sudo pacman-color'
 alias y='yaourt'
 alias h='htop'
-alias vim='sudo vim'
+# alias vim='sudo vim'
  
 #[Esc][h] man 当前命令时，显示简短说明
 alias run-help >&/dev/null && unalias run-help
